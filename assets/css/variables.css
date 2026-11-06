@@ -1,0 +1,55 @@
+/* ==========================================================================
+   variables.css — Design tokens for a dark, technical engineering look:
+   charcoal-navy surfaces, electric blue + cyan as the working accents,
+   amber kept in reserve. --ink is the dark color used for text that sits
+   ON TOP of a bright accent fill (e.g. button labels / hover states).
+   ========================================================================== */
+
+:root{
+  /* Surfaces */
+  --navy-deep:#070a0e;      /* page background — charcoal-navy */
+  --navy:#0b0f15;           /* secondary surface */
+  --navy-panel:#111720;     /* card surface */
+  --line:rgba(205,222,235,0.08);
+  --line-strong:rgba(205,222,235,0.16);
+
+  /* Text */
+  --cream:#eef2f6;          /* primary text — near-white */
+  --cream-dim:#a6b3c2;
+  --cream-dimmer:#8795a6;   /* >=4.5:1 on cards and over the background picture */
+  --ink:#070a0e;            /* dark text set ON TOP of a bright accent fill */
+
+  /* Accents */
+  --blue:#4da3ff;           /* electric blue — primary accent */
+  --blue-dim:#2a6bc2;
+  --cyan:#49e0e8;           /* cyan — secondary accent */
+  --cyan-dim:#2a9aa3;
+  --amber:#ffb648;          /* amber — sparing use only */
+  --amber-dim:#c37c20;
+
+  /* aliases so existing component CSS (written against --gold) still works */
+  --gold:var(--blue);
+  --gold-dim:var(--blue-dim);
+  --leaf:#5ed98a;
+  --leaf-dim:#399e63;
+
+  /* Type */
+  --display:'Space Grotesk', 'Inter', sans-serif;
+  --body:'Inter', sans-serif;
+  --mono:'JetBrains Mono', monospace;
+
+  /* Shadows / glow — restrained, dark-mode appropriate */
+  --shadow-card: 0 14px 32px -16px rgba(0,0,0,0.6);
+  --shadow-lift: 0 18px 38px -16px rgba(0,0,0,0.55), 0 8px 18px -10px rgba(77,163,255,0.16);
+  --glow-gold: 0 0 0 1px rgba(77,163,255,0.3), 0 10px 24px -12px rgba(77,163,255,0.22);
+  --glow-leaf: 0 0 0 1px rgba(94,217,138,0.3), 0 8px 20px -10px rgba(94,217,138,0.22);
+
+  /* Tool logos sit on this tile colour. Light = any brand-colour logo stays
+     legible. If your logos are white/light, set this to a dark value
+     (e.g. #070a0e). */
+  --logo-tile:#ffffff;
+
+  /* Layout */
+  --maxw:1180px;
+  --chamfer:14px;
+}
